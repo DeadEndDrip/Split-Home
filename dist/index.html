@@ -11,6 +11,14 @@
             darkMode: 'class',
             theme: {
                 extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#5836d5',
+                            hover: '#4a2bb5',
+                            light: '#7b5df0',
+                            dark: '#3d259e',
+                        }
+                    },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                     },
@@ -33,6 +41,17 @@
             transition-property: background-color, border-color, color, fill, stroke;
             transition-duration: 200ms;
         }
+        /* Custom scrollbar for better UX on mobile webviews */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
     </style>
 
 <link rel="stylesheet" href="/index.css">
@@ -47,7 +66,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-4Kb1UVus.js"></script>
+  <script type="module" crossorigin src="/assets/index-Hmx2CAZl.js"></script>
 </head>
 <body>
     <div id="root"></div>
